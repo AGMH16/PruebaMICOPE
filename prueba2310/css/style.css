@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+main {
+
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(5, 1fr);
+	max-width: 1100px;
+	margin: auto;
+}
+
+figure,
+figure img {
+	display: inline-block;
+	width: 100%;
+}
+
+figure {
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY(0deg);/*Darle movimiento a la página*/
+	cursor: pointer;
+}
+
+figure::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0);
+	transition: 0.3s all ease;
+}
+
+figure:hover:after {
+	background: rgba(255, 255, 255, 0.137);
+}
+
+figure.opened {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+figure .back {
+	display: block;
+	backface-visibility: hidden;
+}
+
+figure .searched-image {
+	position: absolute;
+	top: 0;
+	height: 150px;
+	width: 100px;
+	overflow: hidden;
+	background-color: rgb(15, 15, 94);
+	border-radius:1em;
+	top: 100px;
+	left: 90px;
+}
+
+figure .searched-image2 {
+	position: absolute;
+	top: 0;
+	height: 150px;
+	width: 100px;
+	overflow: hidden;
+	background-color: rgb(15, 15, 94);
+	border-radius:1em;
+	top: 300px;
+	left: 90px;
+}
+
+figure .searched-image3 {
+	position: absolute;
+	top: 50px;
+	height: 700px;
+	width: 350px;
+	overflow: hidden;
+	background-color: rgb(15, 15, 94);
+	left: 0px;
+}
+
+
+.label {
+	font-family: Georgia;
+	position: relative;
+	top: 50px;
+	left: 300px;
+	overflow: hidden;
+	color: #000000;
+	font-size: 12px;
+}
+
+.labelTitulo {
+	font-family: Georgia;
+	position: relative;
+	top: 250px;
+	left: 100px;
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+	font-size: 10px;
+}
+
+.labelDescrip {
+	font-family: Georgia;
+	position: relative;
+	top: 260px;
+	left: 25px;
+	overflow: hidden;
+	color: rgb(104, 103, 98);
+	font-size: 8px;
+}
+
+.label2 {
+	font-family: Georgia;
+	position: relative;
+	top: 250px;
+	left: 300px;
+	overflow: hidden;
+	color: #000000;
+	font-size: 12px;
+}
+
+.labelTitulo2 {
+	font-family: Georgia;
+	position: relative;
+	top: 450px;
+	left: 100px;
+	overflow: hidden;
+	color: rgb(0, 0, 0);
+	font-size: 10px;
+}
+
+.labelDescrip2 {
+	font-family: Georgia;
+	position: relative;
+	top: 460px;
+	left: 25px;
+	overflow: hidden;
+	color: rgb(104, 103, 98);
+	font-size: 8px;
+}
+
+nav ul {
+    list-style-type: none; /* Quitamos las viñetas de la lista */
+}
+nav li {
+    display: inline; /* Ítems del menú en una línea horizontal */ 
+}

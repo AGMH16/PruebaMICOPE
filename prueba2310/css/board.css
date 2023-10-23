@@ -1,0 +1,17 @@
+body {
+    font-family:Georgia;
+    background: #ffffff;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.46);
+}
+
+header {
+    font-size:10px;
+    background: rgba(112, 103, 103, 0.46);
+}
